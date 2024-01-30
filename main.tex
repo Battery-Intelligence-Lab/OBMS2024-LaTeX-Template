@@ -1,0 +1,59 @@
+% Ensure this file builds without any errors
+% Document class for A4 paper and a 2.5cm margin. Do not modify
+\documentclass{article}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+
+% Packages required for content formatting and image handling.
+\usepackage{graphicx} % Required for inserting images
+\usepackage{lipsum}  % generates filler text 
+\usepackage{duckuments}  % generates filler picture 
+\usepackage{authblk} % handles authors and affiliations
+\usepackage{mfirstuc} % required for \captilisewords command
+\usepackage{fancyhdr} % required for header
+
+% Set up the fancyhdr package, do not modify
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[L]{Oxford Battery Modelling Symposium 2024 - Poster Abstracts}
+\renewcommand{\headrulewidth}{0pt} % remove the header rule line
+
+\title{\capitalisewords{title of submission}}
+\date{} % do not modify this
+
+% add authors and affiliation details below
+\author[1]{Alison Carefully}
+\author[2]{Ivor Question}
+\author[3]{John Smith}
+\affil[1]{\small Department of Mathematics, University X}
+\affil[2]{\small Department of Biology, University Y}
+
+% add the abstract below; 1 page max! use \cite{} for references
+% keep the total amount of file dependencies below 5MB (incl. images)
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+\vspace{-0.5cm} % do not modify this
+
+% main text here
+This study presents a novel approach in the modeling of advanced cathode materials for lithium-ion batteries, aiming to enhance electrochemical performance and longevity. Utilizing a combination of atomistic and continuum modeling techniques, we investigate the impact of microstructural modifications on the electrochemical behavior of layered oxide cathodes. Our research identifies key parameters influencing ion diffusion and electronic conductivity, essential for optimizing battery design. The findings offer significant insights into developing more efficient and durable lithium-ion batteries, contributing to advancements in energy storage technologies as shown in Figure \ref{fig:enter-label} below. This work demonstrates the potential of detailed material modeling in improving battery performance, providing a roadmap for future battery material innovations. \cite{Ragone1968} \cite{Newman1975} % this is just placeholder text; delete
+
+% one figure, max
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=10cm]{example-image-duck}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+% Example references below as bibitems
+\begin{thebibliography}{9}
+
+\bibitem{Ragone1968} Ragone, D. Review of Battery Systems for Electrically Powered Vehicles. {\em SAE Technical Paper Series}. (1968,2), http://dx.doi.org/10.4271/680453
+
+\bibitem{Newman1975}Newman, J. \& Tiedemann, W. Porous‐electrode theory with battery applications. {\em AIChE Journal}. \textbf{21}, 25-41 (1975,1), http://dx.doi.org/10.1002/aic.690210103
+
+\end{thebibliography}
+
+\end{document}
+
+
+
