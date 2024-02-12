@@ -13,8 +13,8 @@ This repository contains a LaTeX template for OBMS abstracts. It provides a stru
 To use this template, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Open the `main.tex` file in your preferred LaTeX editor.
-3. Replace the placeholder content with your own paper content.
+2. Depending on your submission, open the `speaker/` or `poster/` `main.tex` file in your preferred LaTeX editor. **Note:** unless you have been invited as a speaker, your submission is for a poster.
+3. Replace the placeholder content with your own content.
 4. Customize the title, authors, and affiliations in the document header.
 5. Compile the LaTeX document to generate the PDF output.
 6. Save the output PDF as `LastName_FirstName.pdf` and upload to the [submission form](https://forms.gle/4b94qsiydyFXsxF18).

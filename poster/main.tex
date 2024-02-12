@@ -9,11 +9,22 @@
 \usepackage{duckuments}  % generates filler picture 
 \usepackage{authblk} % handles authors and affiliations
 \usepackage{mfirstuc} % required for \captilisewords command
+% do not capitalise the following words, though:
+\gMFUnocap{to} \gMFUnocap{and}
+\gMFUnocap{of} \gMFUnocap{the}
+\gMFUnocap{in} \gMFUnocap{between}
+\gMFUnocap{over} \gMFUnocap{but}
+\gMFUnocap{or} \gMFUnocap{so}
+\gMFUnocap{an} \gMFUnocap{a}
+\gMFUnocap{as} \gMFUnocap{at}
+\gMFUnocap{by} \gMFUnocap{per}
+\gMFUnocap{via}
+
 \usepackage{fancyhdr} % required for header
 
 % Set up the fancyhdr package, do not modify
 \fancyhf{} % Clear all header and footer fields
-\fancyhead[L]{Oxford Battery Modelling Symposium 2024 -- Speaker Abstracts}
+\fancyhead[L]{Oxford Battery Modelling Symposium 2024 -- Poster Abstracts}
 \renewcommand{\headrulewidth}{0pt} % remove the header rule line
 
 \title{\capitalisewords{title of submission}}
@@ -54,6 +65,3 @@ This study presents a novel approach in the modeling of advanced cathode materia
 \end{thebibliography}
 
 \end{document}
-
-
-
